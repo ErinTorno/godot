@@ -1557,6 +1557,7 @@ public:
 	virtual uint64_t get_frame_profile_frame() = 0;
 
 	virtual double get_frame_setup_time_cpu() const = 0;
+	virtual double get_rasterizer_total_time() const = 0;
 
 	virtual void gi_set_use_half_resolution(bool p_enable) = 0;
 

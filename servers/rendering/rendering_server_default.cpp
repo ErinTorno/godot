@@ -201,6 +201,10 @@ double RenderingServerDefault::get_frame_setup_time_cpu() const {
 	return frame_setup_time;
 }
 
+double RenderingServerDefault::get_rasterizer_total_time() const {
+	return RSG::rasterizer->get_total_time();
+}
+
 bool RenderingServerDefault::has_changed() const {
 	return changes > 0;
 }
